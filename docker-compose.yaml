@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  libpcap-builder:
+    build: .
+    image: v1ll4n/libpcap-cross-build:1.9.1
+    volumes:
+      - ./dist:/libpcap
+      - ./build.sh:/workspace/build.sh
+    command: ./build.sh
