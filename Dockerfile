@@ -25,7 +25,7 @@ WORKDIR /workspace
 # 你可以在这里克隆你需要的库，如libpcap
 RUN git clone https://github.com/the-tcpdump-group/libpcap.git && \
     cd libpcap && \
-    git checkout libpcap-1.9.1
+    git checkout libpcap-1.10.4
 
 # 设置默认的构建命令
 CMD ["bash"]
